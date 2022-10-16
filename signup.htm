@@ -1,0 +1,31 @@
+{% extends "layout.htm" %}
+
+{% block body %}
+<div class="container">
+    <h1>Signup</h1>
+    <form action="", method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" placeholder="name" required>
+        </div><br>
+       
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" placeholder="email" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="phone" name="phone" class="form-control" placeholder="phone" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" placeholder="password" required>
+        </div>
+        <br>
+       
+        <button class="btn btn-primary" type="submit" value="Register">submit</button>
+    </form>
+</div>
+{% endblock %}
