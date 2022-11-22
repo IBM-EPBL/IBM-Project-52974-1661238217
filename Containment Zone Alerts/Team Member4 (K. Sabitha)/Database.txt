@@ -1,0 +1,15 @@
+import ibm_db
+conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=21fecfd8-47b7-4937-840d-d791d0218660.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=31864;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=xcx38812;PWD=oHn42G7Az6tJfmmn",'','')
+print(conn)
+print("connection successful...")
+
+
+''''insert_sql = "Insert into users values(?,?,?,?)"
+prep_stmt=ibm_db.prepare(conn,insert_sql)
+ibm_db.bind_param(prep_stmt, 1, 1)
+ibm_db.bind_param(prep_stmt, 2, "dhanu")
+ibm_db.bind_param(prep_stmt, 3, "dhanu@gmail.com")
+ibm_db.bind_param(prep_stmt, 4, "dhanu")
+ibm_db.exec_immediate(conn,prep_stmt)
+print("Inserted")'''
+
